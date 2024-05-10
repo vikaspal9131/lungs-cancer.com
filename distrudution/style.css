@@ -1,0 +1,410 @@
+@font-face {
+  font-family: NB;
+  src: url(font/NBInternationalProBoo.woff2);
+}
+
+@font-face {
+  font-family: Rejoin;
+  src: url(font/Rejouice-Headline.woff2);
+}
+
+@keyframes move {
+  from{
+   transform: translateX(0);  
+  }
+  to{
+    transform: translateX(-100%);
+  }
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html body {
+  height: 100%;
+  width: 100%;
+  background-color: #f5e4e4;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#page1{
+  height: 100vh;
+  width: 100% ;
+  background-color: #f5e4e4;
+  cursor: none;
+  color: black;
+}
+
+.cursor{
+  height: 6vw;
+  width: 6vw;
+  border-radius: 50%;
+  background-color:#FF5F38;
+  color: white;
+  position: absolute;
+  z-index:9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50% ,-50%);
+  font-size: 20px;
+  font-family: Rejoin;
+}
+
+.cursor h6{
+  font-size: 1.2vw;
+  font-family: nb;
+  font-weight: 9;
+  color: rgb(26, 25, 25);
+}
+
+.page1-content{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  z-index: 9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-weight: 500;
+
+ 
+}
+.page1-content h1 span{
+  font-family: Rejoin;
+  display: inline-block;
+}
+
+nav{
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: NB;
+
+}
+
+
+.log{
+  margin-left: 8vw;
+ 
+}
+
+.log  h2>span{
+  color: #FF5F38;
+}
+nav .option {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
+.option button{
+   padding: 1vw 1vw;
+   border-radius: 60px;
+   border: none;
+   background-color: #FF5F38;
+   color: white;
+   font-size: 1rem;
+   cursor: none;
+}
+
+.option a{
+  height: 6vh;
+  width:  15vw;
+  padding: 24px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  font-size: 1.1rem;
+  /* border: 2px solid white;   */
+  border-radius: 100px;
+  color: black;
+  background-color: white;
+  cursor: none;
+}
+
+
+.option span {
+  background-color: black;
+  padding: 10px;
+  border-radius: 80%;
+  color: white;
+
+}
+
+
+
+#loader{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Rejoin;
+  gap: 10;
+}
+
+#loader h3{
+  font-size:1.5vw;
+  margin-left: 20px
+}
+
+
+.hero-section{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.8px solid rgb(53, 53, 53); 
+
+}
+
+.heading{
+  width: 40%;
+}
+
+.heading h1 {
+  text-align:end;
+  font-size: 8vw;
+  line-height: 8vw;
+  font-weight: 800;
+}
+
+.sub-headings{
+  width: 40%;
+  margin-left: 30px;
+  font-family: NB;
+  row-gap: 10;
+  font-size: 1.5vw;
+  font-weight: 900;
+}
+
+.sub-headings p{
+  font-weight: 300;
+}
+
+.sub-headings button{
+  margin-top: 1vw;
+  padding: 10px 20px;
+  background-color:#FF5F38;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 1.2vw;
+  gap: 20;
+}
+
+.page2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+
+.page2-content{
+  width: 94%;
+  height: 94%;
+ 
+}
+
+.page2-content>video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+
+
+.page3{
+  width: 100%;
+  height: 50vh;
+  background-color: black;
+  color: white;  
+  font-family: NB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.page3 p{ 
+  font-size: 1vw;
+  margin-right: 1vw;
+  font-weight: 100;
+  color: #8b8989;
+  margin-top: 30px;
+}
+
+.page3 h1{ 
+  font-size: 5vw;
+  display: inline-block;
+  align-items: center;
+  font-weight: 800;
+  line-height: 80px;
+}
+.page3-h-p{
+  height: 9vh;
+  display: flex;
+  align-items: center;
+
+}
+
+.page3-btn2 button{
+  height: 7vh;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: #ff5b3281;
+  border: 1px solid #FF5F38;
+  font-size: 1vw;
+  color: #f5e4e4;
+}
+
+.page3-h-b{
+  display: flex;
+  align-items: center;
+
+}
+
+.page3-btn1 button {
+  height: 7vh;
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  border: none;
+  margin-top: 20px;;
+  font-size: 20px;
+  margin-left: 10px;
+  background-color: white;
+  color: black;
+}
+
+.page4{
+  width: 100%;
+  height: 27vh;
+  background-color: black;
+  color: white;
+
+}
+
+.moving-text{
+  white-space: nowrap;
+  overflow-x: auto;
+ 
+}
+
+.moving-text::-webkit-scrollbar{
+  display: none;
+}
+.con{
+  margin-top: 30px;
+  white-space: nowrap;
+  display: inline-block;
+  font-family:NB;
+  animation-name: move;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+
+.moving-text h1{
+  font-size: 7vw;
+  margin-left: 50px;
+  display: inline-block;
+  
+}
+  
+.page5{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family:Rejoin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page5-heading{
+  width: 90%;
+  /* height: 7vh; */
+}
+.page5 h1{
+  font-weight: 400;
+  font-size: 6vw;
+}
+.page5-content{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.form-div{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.page5-video{
+  width: 50%;
+  height: 100%;
+
+}
+.form-div form {
+  width: 60%;
+  height: 90%;
+}
+.form-div form input{
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 40px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-bottom: 2px solid white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+.form-div form input:focus{
+  outline: none;
+}
+.video-contener{
+  width: 90%;
+  height: 90%;
+  margin-top: 50px;
+  background-color: #ff5b3281;
+}
+
+.video-contener img{
+  width: 100%;
+  height: 100%;
+
+
+}
