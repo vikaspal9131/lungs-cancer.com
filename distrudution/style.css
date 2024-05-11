@@ -351,7 +351,6 @@ nav .option {
 }
 .page5-heading{
   width: 90%;
-  /* height: 7vh; */
 }
 .page5 h1{
   font-weight: 400;
@@ -360,7 +359,7 @@ nav .option {
 .page5-content{
   width: 100%;
   height: 100vh;
-  display: flex;
+
 }
 .form-div{
   width: 50%;
@@ -395,16 +394,102 @@ nav .option {
 .form-div form input:focus{
   outline: none;
 }
-.video-contener{
-  width: 90%;
-  height: 90%;
-  margin-top: 50px;
-  background-color: #ff5b3281;
+
+.form-div form div {
+  font-size: 20px;
+  text-align: center;
+
 }
 
-.video-contener img{
+.arrow p i{
+  display: flex;
+  height: 2vh;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+
+.page6{
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-color: black;
+  /* background-color: #f5e4e4; */
+  font-family: Rejoin;
+  color: white;
+}
 
+.page6-top{
+  padding: 30px;
+  text-align: center;
+}
+.page6-top h4{
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+.page6-top h4 span {
+  font-size: 0.7vw;
+  color: black;
+  background-color: white;
+  padding: 4px 10px;
+  border-radius: 10px;
+  text-align: center ;
+  
+  
+}
+.page6-top h2{
+  font-size: 4vw;
+  font-weight: 400;
+}
+
+
+.card-container{
+  width: 100%;
+  height: 70vh;
+
+  /* overflow-x: auto; */
+  
 
 }
+
+.card{
+  width: 23vw;
+  height: 68vh;
+  background-color: #353535;
+  padding: 30px;
+  display: inline-block;
+}
+.card-top{
+  width: 65%;
+  height: 15vh;
+  display: flex;
+  font-size: 2vw;
+  justify-content: space-between;
+}
+
+.card-log{
+  width: 7vw;
+  height: 14vh;
+  background-color: forestgreen;
+  border-radius: 50%;
+}
+.card-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content h5{
+   margin-top: 20px;
+   font-size: 30px;
+   writing-mode: vertical-rl; 
+   margin-right: 20px;
+        
+}
+
+.card-btn{
+  margin-top: 40px;
+  text-align: end;
+}
+
